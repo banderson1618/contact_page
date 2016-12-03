@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a><img src = ./images/logo.svg alt="Our logo" width="184" id="LogoImage"></a>
+            <ul class="navigation" id="TopMenu">
+              <li class="HeaderLinks"><a class="HeaderFont" href="/about">About Us</a></li>
+              <li class="HeaderLinks"><a class="HeaderFont" href="/index">Home</a></li>
+            </ul>
+        </header>
+
+        <div id="ContactContent">
+            <div id="ContactUsInfo">
+                <p id="ContactInfoTitle">HOLD OUT A LITTLE LONGER</p>
+                <p class="AboutBodyText">Fill out the form below and we will send you an email with a simple liability form for you to sign. After that, we will ship you your free can of Kool-Aid, satisfaction guaranteed. We've never heard a bad word from our wonderful customers, because they already moved on to the afterlife!</p>
+            </div>
+            <div id="ContactUsForm">
+              <form action="/email" method="get">
+                <input id="FirstNameInput" class="InputStyle" style="text" placeholder="First Name"></input>
+                <input id="LastNameInput" class="InputStyle" style="text" placeholder="Last Name"></input>
+                <br></br>
+                <input id="EmailForm" type="text" name="email" placeholder="Email Address" class="InputStyle">
+                <br></br>
+                <input id="EmailConfirm" class="InputStyle" style="text" placeholder="Confirm Email Address"></input>
+
+                <input type="submit" value="BRING ON THE AFTERLIFE"/>
+              </form>
+              <p><%= message %></p>
+            </div>
+        </div>
+
+        <footer id="IndexFooter">
+            <ul class="navigation" id="FooterMenu">
+              <li class="FooterLinks"><a class="FooterFont" href="./index">Home</a></li>
+              <li class="FooterLinks"><a class="FooterFont" href="./about">About Us</a></li>
+              <li class="FooterLinks"><a class="FooterFont" href="./contact">Contact</a></li>
+            </ul>
+            <ul id="FooterSocialMenu">
+                <li class="FooterImage"><a href="https://www.facebook.com"><img src = ./images/facebook.svg alt="Facebook logo"  class="SocialImage"></a></li>
+                <li class="FooterImage"><a href="https://www.instagram.com"><img src = ./images/instagram.svg alt="Instagram logo" class="SocialImage"></a></li>
+                <li class="FooterImage"><a href="https://www.twitter.com"><img src = ./images/twitter.svg alt="Twitter logo" class="SocialImage"></a></li>
+            </ul>
+
+            <div id="FooterBottomRow">
+                <p>&copy;ShaedyCult2016</p>
+            </div>
+        </footer>
+        <script src= ./js/contact.js></script>
+
+    </body>

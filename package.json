@@ -1,0 +1,16 @@
+{
+  "name": "ContactPage",
+  "version": "1.0.0",
+  "description": "A contact page that sends an email",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.3",
+    "express": "^4.14.0",
+    "nodemailer": "^2.6.4",
+    "nodemailer-smtp-transport": "^2.7.2",
+    "nodemon": "^1.11.0"
+  }
+}
